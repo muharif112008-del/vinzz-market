@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinzz Digital Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),url('background.jpg');
+background-size:cover;background-position:center;background-attachment:fixed;
+color:#fff;overflow-x:hidden;
+}
+.container{max-width:900px;margin:auto;padding:20px}
+.hero,.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(16px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:24px;
+box-shadow:0 8px 30px rgba(0,0,0,.3);
+}
+.hero{text-align:center;padding:30px;margin-top:20px}
+.profile{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.3)}
+.hero h1{margin-top:15px}
+.status{color:#8fff8f;margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.stat,.price,.linkbtn{
+background:rgba(255,255,255,.08);
+padding:14px;border-radius:16px
+}
+.stat{text-align:center}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.card{padding:20px;margin:15px 0}
+.price{display:flex;justify-content:space-between;margin:8px 0}
+.links a,.order{
+display:block;text-decoration:none;color:white;
+padding:15px;border-radius:16px;margin:10px 0;
+background:rgba(255,255,255,.12)
+}
+.qris{width:100%;border-radius:16px}
+details{margin:10px 0;background:rgba(255,255,255,.08);padding:12px;border-radius:12px}
+.music{position:fixed;right:15px;bottom:15px;padding:12px 16px;border:none;border-radius:14px}
+@media(max-width:700px){.grid,.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+<img src="https://img2.pixhost.to/images/8473/735757580_alip-1780821320041.jpg" class="profile">
+<h1>𝗠𝘆 𝗩𝗶𝗻𝘇𝘇 𝗦𝘁𝗼𝗿𝗲 🍀</h1>
+<p>› ׁ 𝗏𝗂𝗇𝗓𝗓 - 𝖺𝗂 𝗆𝗎𝗅𝗍𝗂𝖽𝖾𝗏𝗂𝖼𝖾 🍀</p>
+<div class="status">🟢 Online 24 Jam</div>
+</div>
+
+<div class="stats">
+<div class="stat"><h3>1500+</h3><p>Customer</p></div>
+<div class="stat"><h3>250+</h3><p>Premium</p></div>
+<div class="stat"><h3>24/7</h3><p>Support</p></div>
+</div>
+
+<div class="grid">
+<div class="card">
+<h2>💎 Buy Premium</h2>
+<div class="price"><span>7 Hari</span><span>Rp7.000</span></div>
+<div class="price"><span>1 Bulan</span><span>Rp16.000</span></div>
+<div class="price"><span>2 Bulan</span><span>Rp25.000</span></div>
+<div class="price"><span>3 Bulan</span><span>Rp28.000</span></div>
+<div class="price"><span>Permanent</span><span>Rp32.000</span></div>
+</div>
+
+<div class="card">
+<h2>🤖 Sewa Bot</h2>
+<div class="price"><span>7 Hari</span><span>Rp10.000</span></div>
+<div class="price"><span>1 Bulan</span><span>Rp20.000</span></div>
+<div class="price"><span>2 Bulan</span><span>Rp30.000</span></div>
+<div class="price"><span>3 Bulan</span><span>Rp40.000</span></div>
+<div class="price"><span>Permanent</span><span>Rp50.000</span></div>
+</div>
+</div>
+
+<div class="card links">
+<h2>🔗 Quick Links</h2>
+<a href="https://whatsapp.com/channel/0029Vb7ip1S3GJP1TXbjBr1r">📢 Saluran WhatsApp</a>
+<a href="https://wa.me/62882020706799">👨‍💻 WhatsApp Developer</a>
+<a href="https://chat.whatsapp.com/H4hdo0PNBP1COECjCaRwnk">🍀 Grup Bot WhatsApp</a>
+</div>
+
+<div class="card">
+<h2>💳 QRIS Payment</h2>
+<img src="https://files.catbox.moe/cuirow.jpg" class="qris">
+<a class="order" href="https://wa.me/62882020706799">🛒 Saya Sudah Bayar</a>
+</div>
+
+<div class="card">
+<h2>❓ FAQ</h2>
+<details><summary>Cara Order?</summary><p>Scan QRIS lalu kirim bukti pembayaran ke developer.</p></details>
+<details><summary>Bot Online?</summary><p>Ya, bot aktif 24 jam.</p></details>
+<details><summary>Premium Permanen?</summary><p>Ya, sesuai ketentuan yang kamu tetapkan.</p></details>
+</div>
+
+</div>
+<audio id="bgm" src="https://d.uguu.se/FsiHOMQc.mp3" loop></audio>
+<button class="music" onclick="toggleMusic()">🎵 Music</button>
+<script>
+function toggleMusic(){
+const a=document.getElementById('bgm');
+if(a.paused){a.play()}else{a.pause()}
+}
+</script>
+</body>
+</html>
